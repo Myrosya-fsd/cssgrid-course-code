@@ -4,4 +4,20 @@
 
 .container {
   display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  border: 10px solid black;
+  /*justify-items: start; /*по ширині контенту
+  justify-items: end;
+  justify-items: center;
+  justify-items: stretch; по замовчуванню*/
+  /*align-items: end; /* start, center
+  stretch по замовчуванню*/
+  /*justify-content: space-evenly; /*center, end, start, space-around, space-between*/
+  /*align-content: center; /*start-по замовчуванню, end, space-around, space-between, space-evenly*/
+}
+
+.item-4 {
+  justify-self: start; /*center, end, stretch - приміняється до якогось 1 елемента*/
+  align-self: center; /*start, end, stretch - приміняється до якогось 1 елемента*/
 }
